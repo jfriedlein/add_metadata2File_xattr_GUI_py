@@ -7,7 +7,7 @@ Instead of putting some information into the filename of e.g. a picture, you can
 
 This is set up for Linux using xattr and python.
 
-Some limitations for xattr exist (data size ~kByte, etc.)
+Some limitations for xattr exist (data size ~kByte, etc.). Also note that copying files with xattr can be strange.
 
 ## How-to
 ### Usage with file explorer caja
@@ -32,5 +32,7 @@ Some limitations for xattr exist (data size ~kByte, etc.)
 This is a quick&dirty 2 hour AI-based implementation.
 
 ## ToDos
+- Text selection is not possible in my "Note:" field, why?
+- Check why file copies add each byte as hex
 - collect the needed python packages
 - This could be packed into a standalone python executable to avoid the need for a python installation and the GUI packages.
